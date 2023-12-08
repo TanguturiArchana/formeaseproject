@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BookingPartyInformation.css"/>
+    <title>Form Example</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        
+    }
+
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .cont{
+        display: inline-block;
+        margin-right: 5%;
+        margin-left: 10px;
+        
+
+    }
+    .diff{
+        display: inline-flex;
+        margin-right: 10%;
+        margin-left: 10px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        
+    }
+    .scrollable{
+    height: 100vh;
+    overflow-y: scroll;
+
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <div class="scrollable">
+        <form id="myForm" >
+            <h2  style="margin-left: 3px;" >Court Reporting </h2>
+            <div class="diff">
+                <div>
+                    <label for="zipCode">Will this matter plan to have a Court Reporter?</label>
+                    
+                </div>
+            </div>
+            <div class="diff">
+                <div>
+                    <label for="zipCode">Would you like an Arbitration Place Court Reporter?</label>
+                    
+                </div>
+            </div>
+
+            <div style="margin-left: 15px;">
+                <label for="country">Is there a specific Arbitration Place Court Reporter you prefer?</label>
+                <input style=" width:300px;" type="text" id="country" name="country" placeholder="" required> 
+            </div>
+            <div class="diff">
+                <div>
+                    <label for="zipCode">Will a transcript be required?</label>
+                    
+                </div>
+            </div>
+
+            <div style="margin-left: 15px;">
+                <label for="country">Turnaround time?</label>
+                <input style=" width:300px;" type="text" id="country" name="country" placeholder="" required> 
+            </div>
+            <div class="diff">
+                <div>
+                    <label for="zipCode">Multilingual?</label>
+                    
+                </div>
+            </div>
+
+            <div style="margin-left: 15px;">
+                <label for="country">Please list the non-english languages you would like accommodated(separate by comma)?</label>
+                <input style=" width:300px;" type="text" id="country" name="country" placeholder="" required> 
+            </div>
+
+            <div style="margin-left: 15px;">
+                <label for="country">Daily Rough Draft?</label>
+                <input style=" width:300px;" type="text" id="country" name="country" placeholder="" required> 
+            </div>
+            <div style="margin-left: 15px;">
+                <label for="country">Realtime reporting?</label>
+                <input style=" width:300px;" type="text" id="country" name="country" placeholder="" required> 
+            </div>
+            
+
+
+
+
+
+            <h2  style="margin-left: 3px;" >Additional Features</h2>
+            <div class="diff">
+                <div>
+                    <label for="zipCode">Do you require interpretation?</label>
+                    
+                </div>
+            </div>
+
+            <div style="margin-left: 15px;">
+                <label for="country">Please list all languages to be interpreted(separate by comma)</label>
+                <input style=" width:300px;" type="text" id="country" name="country" placeholder="" required> 
+            </div>
+            <div class="diff">
+                <div>
+                    <label for="zipCode">Do you require CART services??</label>
+                    
+                </div>
+            </div>
+
+            
+            <div class="cont">
+                <div>
+                    <label for="zipCode">Will you need a quote prior to confirmation?</label>
+                    
+                </div>
+            </div>
+
+            <div style="margin-left: 15px;">
+                <label for="country">Please list any additional requests or considerations you might have at this time</label>
+                <input style=" width:300px;" type="text" id="country" name="country" placeholder="" required> 
+            </div>
+
+
+            
+            
+        </form>
+        
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BookingPartyInformation.css"/>
+    <title>Form Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        
+    }
+
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .cont{
+        display: inline-block;
+        margin-right: 5%;
+        margin-left: 10px;
+        
+
+    }
+    .diff{
+        display: inline-flex;
+        margin-right: 10%;
+        margin-left: 10px;
+    }
+    .scrollable{
+    height: 100vh;
+    overflow-y: scroll;
+
+}
+.image-container {
+            padding: 10px; /* Adjust the padding value as needed */
+        }
+
+
+    button:hover {
+        background-color: #45a049;
+    } 
+    </style>
+</head>
+<body>
+    <div class="scrollable">
+        <form id="myForm" >
+            <div class="d-flex flex-row justify-content-left">
+                <div style='font-size:50px;display: inline-flex;justify-content: center;' ><span style='font-size:50px;display: inline-flex;'>&#8963;</span></div>
+            
+                <div style="display: inline;" ><h2  style="margin-left: 3px;display: inline-flex;" >Basic Logistics</h2></div>
+            </div>
+            <p style="margin-left: 10px;">Upload Cover Page (optional)</p>
+            <p style="margin-left: 30px;">Choose file here</p>
+            
+            <div class="cont">
+                
+                <label for="country">Style of cause</label>
+                <input type="text" id="country" name="country" placeholder="Input" required>
+                <label for="country">Start time</label>
+                
+                <div  class="d-flex flex-row justify-content-left" >
+                    <div class="image-container">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/213/non_2x/question-mark-vector-icon.jpg" alt="Description of the image" width="20" height="20" >
+                    </div>
+
+                    <div> <input type="text" id="country" name="country" placeholder="Type here" required></div>
+
+                </div>
+
+
+
+
+                
+            </div>
+            <div class="cont">
+                <label for="phoneNumber">Court File #</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Type here" required>
+
+                
+                <br><br/>
+                <div  class="d-flex flex-row justify-content-left" >
+                    <div class="image-container">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/213/non_2x/question-mark-vector-icon.jpg" alt="Description of the image" width="20" height="20" >
+                    </div>
+
+                    <div>  <input type="text" id="country" name="country" placeholder="" required></div>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="cont">
+                <label for="phoneNumber">Booking Dates</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Type here" required>
+
+                <label for="country">Time Zone</label>
+                <input type="text" id="country" name="country" placeholder="EG:Canada" required>
+
+            </div>
+            <div class="diff">
+                <div class="diff">
+                    <div>
+                        <label for="zipCode">Arbitrator(s)</label>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="Type here" required>
+        
+                        <input type="text" id="bookingContact" name="bookingContact" placeholder="Ad additional counsel" required>
+                    </div>
+        
+                </div>
+                <div class="diff">
+                    <div>
+                        <br><br/>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                    </div>
+    
+        
+    
+                </div>
+            </div>
+
+            <p>Tirbunal secretary?</p>
+
+
+
+            <div class="diff">
+                <div class="diff">
+                    <div>
+                        <label for="zipCode">Witness(es)</label>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="Type here" required>
+        
+                        <input type="text" id="bookingContact" name="bookingContact" placeholder="Ad additional counsel" required>
+                    </div>
+        
+                </div>
+                <div class="diff">
+                    <div>
+                        <br><br/>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                    </div>
+    
+        
+    
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-left">
+                <div style='font-size:50px;display: inline-flex;justify-content: center;' ><span style='font-size:50px;display: inline-flex;'>&#8963;</span></div>
+                <div style="display: inline;" > <h2 style="margin-left: 12px;">Vitual Logistics</h2></div>
+            </div>
+            
+            <div  class="d-flex flex-row justify-content-left" >
+                <div class="image-container">
+                    <img src="https://static.vecteezy.com/system/resources/previews/000/440/213/non_2x/question-mark-vector-icon.jpg" alt="Description of the image" width="20" height="20" >
+                </div>
+
+                <div> <p style="margin-left: 12px;">Do you require a VCM(virtual case manager)?</p></div>
+
+            </div>
+
+            
+
+            <div style="margin-left: 15px;">
+                <label for="country">Is there a particular VCM you want to work with?</label>
+                
+                <div  class="d-flex flex-row justify-content-left" >
+                    <div class="image-container">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/213/non_2x/question-mark-vector-icon.jpg" alt="Description of the image" width="20" height="20" >
+                    </div>
+    
+                    <div><input style=" width:300px;" type="text" id="country" name="country" placeholder="" required>  </div>
+    
+                </div>
+    
+            </div>
+
+            <div class="diff">
+                <div class="diff">
+                    <div>
+                        <label for="zipCode">Select a virtual platform</label>
+                        
+                        <div  class="d-flex flex-row justify-content-left" >
+                            <div class="image-container">
+                                <img src="https://static.vecteezy.com/system/resources/previews/000/440/213/non_2x/question-mark-vector-icon.jpg" alt="Description of the image" width="20" height="20" >
+                            </div>
+            
+                            <div><input type="text" id="zipCode" name="zipCode" placeholder="Type here" required> </div>
+            
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="diff">
+                    <div>
+                        <label for="zipCode">Number of virtual breakout rooms</label>
+                        
+
+                        <div  class="d-flex flex-row justify-content-left" >
+                            <div class="image-container">
+                                <img src="https://static.vecteezy.com/system/resources/previews/000/440/213/non_2x/question-mark-vector-icon.jpg" alt="Description of the image" width="20" height="20" >
+                            </div>
+            
+                            <div><input type="text" id="zipCode" name="zipCode" placeholder="Type here" required></div>
+            
+                        </div>
+                    </div>
+    
+        
+    
+                </div>
+            </div>
+
+            
+            <div  class="d-flex flex-row justify-content-left" >
+                <div class="image-container">
+                    <img src="https://static.vecteezy.com/system/resources/previews/000/440/213/non_2x/question-mark-vector-icon.jpg" alt="Description of the image" width="20" height="20" >
+                </div>
+
+                <div><p style="margin-left: 18px;">Do you need us to provide Document Managing Services?</p></div>
+
+            </div>
+
+            <div class="diff">
+                <div class="diff">
+                    <div>
+                        <div  class="d-flex flex-row justify-content-left" >
+                            <div class="image-container">
+                                <img src="https://static.vecteezy.com/system/resources/previews/000/440/213/non_2x/question-mark-vector-icon.jpg" alt="Description of the image" width="20" height="20" >
+                            </div>
+            
+                            <div> <label for="zipCode">Do you have any special accommodatios for your booking that our I.T> team can look into prior to the start date?</label></div>
+            
+                        </div>
+                
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                    </div>
+        
+                </div>
+                <div class="diff">
+                    <div>
+                        <label for="zipCode">Would you like your matter to be recorded?</label>
+                        
+                    </div>
+    
+        
+    
+                </div>
+            </div>
+
+            
+            
+        </form>
+        
+    </div>
+
+
+
+</body>
+</html>

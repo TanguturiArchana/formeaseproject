@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BookingPartyInformation.css"/>
+    <title>Form Example</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+    }
+    .toggle-container {
+      display: inline-block;
+      position: relative;
+      width: 60px;
+      height: 34px;
+    }
+  
+    .toggle-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      border-radius: 34px;
+      transition: .4s;
+    }
+  
+    .toggle-slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px; /* Adjust the initial position for 'yes' state */
+      bottom: 4px;
+      background-color: white;
+      border-radius: 50%;
+      transition: .4s;
+    }
+  
+    input:checked + .toggle-slider {
+      background-color: #4CAF50;
+    }
+  
+    input:focus + .toggle-slider {
+      box-shadow: 0 0 1px #4CAF50;
+    }
+  
+    input:checked + .toggle-slider:before {
+      transform: translateX(26px);
+    }
+  
+    /* Customize colors for 'no' state */
+    input:not(:checked) + .toggle-slider {
+      background-color: #FF0000; /* Red color for 'no' */
+    }
+  
+    input:not(:checked) + .toggle-slider:before {
+      right: 60px; /* Adjust the initial position for 'no' state */
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        
+    }
+
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .cont{
+        display: inline-block;
+        margin-right: 5%;
+        
+
+    }
+    .diff{
+        display: inline-flex;
+        margin-right: 10%;
+        margin-left:10%;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <div class="scrollable">
+        <form id="myForm" >
+            <h2  style="display: inline;margin-left: 5px;" >Booking party Information</h2>
+            <p style="display: inline;margin-left: 3px;">(Enter as much as possible)</p>
+           <div class="d-flex flex-row justify-content-left">
+            
+                
+                <p style="margin-left: 30px;">Use information on account?<span style="margin-left:  13px;"><label class="toggle-container">
+                    <input type="checkbox">
+                    <span class="toggle-slider"></span>
+                </label></span></p>
+
+            
+            
+            
+           </div>
+            
+            <div class="cont">
+                
+                <label for="country">First Name</label>
+                <input type="text" id="country" name="country" placeholder="Input" required>
+        
+                <label for="country">Billing Address</label>
+                <input type="text" id="country" name="country" placeholder="Type here" required>
+            </div>
+            <div class="cont">
+                <label for="country">Booking Contact Name</label>
+                <input type="text" id="country" name="country" placeholder="Type here" required>
+                
+                <label for="zipCode">ZIP/Postal Code</label>
+                <input type="text" id="zipCode" name="zipCode" placeholder="Input" required>
+
+            </div>
+
+            <div class="cont">
+                <label for="phoneNumber">Phone Number (No Spaces)</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Type here" required>
+
+                <label for="country">Country/City</label>
+                <input type="text" id="country" name="country" placeholder="EG:Canada" required>
+
+            </div>
+            <div class="diff">
+                <div class="diff">
+                    <div>
+                        <label for="country">Role</label>
+                        <input type="text" id="country" name="country" placeholder="Type here" required>
+    
+                        <label for="zipCode">Lead counsel(s) information</label>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="Type here" required>
+    
+                        <input type="text" id="bookingContact" name="bookingContact" placeholder="Ad additional counsel" required>
+                    </div>
+        
+                </div>
+                <div class="diff">
+                    <div>
+                        <label for="representedClient">Name of Represented Client</label>
+                        <input type="text" id="representedClient" name="representedClient" placeholder="Type here" required>
+                        <br><br/>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                    </div>
+                                
+                </div>
+            </div>
+            
+
+
+
+
+            <div style="margin:5px;"><h2  style="display: inline;margin-left: 5px;margin:3px;" >Opposing party Information</h2></div>
+            <div class="cont">
+                
+                <label for="country">First Name</label>
+                <input type="text" id="country" name="country" placeholder="Input" required>
+        
+                <label for="country">Billing Address</label>
+                <input type="text" id="country" name="country" placeholder="Type here" required>
+            </div>
+            <div class="cont">
+                <label for="country">Booking Contact Name</label>
+                <input type="text" id="country" name="country" placeholder="Type here" required>
+                
+                <label for="zipCode">ZIP/Postal Code</label>
+                <input type="text" id="zipCode" name="zipCode" placeholder="Input" required>
+
+            </div>
+
+            <div class="cont">
+                <label for="phoneNumber">Phone Number (No Spaces)</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Type here" required>
+
+                <label for="country">Country/City</label>
+                <input type="text" id="country" name="country" placeholder="EG:Canada" required>
+
+            </div>
+            <div class="diff">
+                <div class="diff">
+                    <div>
+                        <label for="country">Role</label>
+                        <input type="text" id="country" name="country" placeholder="Type here" required>
+    
+                        <label for="zipCode">Lead counsel(s) information</label>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="Type here" required>
+    
+                        <input type="text" id="bookingContact" name="bookingContact" placeholder="Ad additional counsel" required>
+                    </div>
+        
+                </div>
+                <div class="diff">
+                    <div>
+                        <label for="representedClient">Name of Represented Client</label>
+                        <input type="text" id="representedClient" name="representedClient" placeholder="Type here" required>
+                        <br><br/>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                    </div>
+                                
+                </div>
+            </div>
+            
+
+
+            <div style="margin:5px;"><h2  style="display: inline;margin-left: 5px;margin:3px;" >Additional parties</h2></div>
+            <div class="cont">
+                
+                <label for="country">First Name</label>
+                <input type="text" id="country" name="country" placeholder="Input" required>
+        
+                <label for="country">Billing Address</label>
+                <input type="text" id="country" name="country" placeholder="Type here" required>
+            </div>
+            <div class="cont">
+                <label for="country">Booking Contact Name</label>
+                <input type="text" id="country" name="country" placeholder="Type here" required>
+                
+                <label for="zipCode">ZIP/Postal Code</label>
+                <input type="text" id="zipCode" name="zipCode" placeholder="Input" required>
+
+            </div>
+
+            <div class="cont">
+                <label for="phoneNumber">Phone Number (No Spaces)</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Type here" required>
+
+                <label for="country">Country/City</label>
+                <input type="text" id="country" name="country" placeholder="EG:Canada" required>
+
+            </div>
+            <div class="diff">
+                <div class="diff">
+                    <div>
+                        <label for="country">Role</label>
+                        <input type="text" id="country" name="country" placeholder="Type here" required>
+    
+                        <label for="zipCode">Lead counsel(s) information</label>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="Type here" required>
+    
+                        <input type="text" id="bookingContact" name="bookingContact" placeholder="Ad additional counsel" required>
+                    </div>
+        
+                </div>
+                <div class="diff">
+                    <div>
+                        <label for="representedClient">Name of Represented Client</label>
+                        <input type="text" id="representedClient" name="representedClient" placeholder="Type here" required>
+                        <br><br/>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="" required>
+                    </div>
+                                
+                </div>
+            </div>
+            
+
+            
+        </form>
+        
+    </div>
+
+
+<!-- <script>
+    function validateForm() {
+    // Validate phone number (no spaces)
+    var phoneNumber = document.getElementById('phoneNumber').value;
+    if (phoneNumber.includes(' ')) {
+        alert('Phone Number should not contain spaces.');
+        return;
+    } -->
+
+    <!-- // Additional validation can be added for other fields
+
+    // If all validations pass, you can submit the form or perform other actions
+    document.getElementById('myForm').submit(); // Assuming you have a submit button in the form
+
+    
+    -->
+</script>
+
+</body>
+</html>
